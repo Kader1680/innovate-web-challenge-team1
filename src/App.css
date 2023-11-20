@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --text-color : #62666d;
+}
+.navbar{
+}
+.App{
+  width: 90%;
+  margin: auto;
+}
+.navbar img{
+  width: 20rem;
+  
+}
+.navbar div ul li a{
+  font-size: 13px;
+  color: var(--text-color);
+}
+input{
+  outline: none;
+}
