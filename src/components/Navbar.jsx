@@ -41,7 +41,8 @@ function Navbar() {
                     <Link class="text-decoration-none">Upcoming events</Link>
                 </li>
                 <div class=" border-bottom border-1 d-lg-none"></div>
-                <li onClick={displaySearch} class="d-lg-inline-block ms-lg-3 ">    <i style={{ fontSize: "16px" }} class="fa-solid fa-magnifying-glass d-sm-none d-md-none"></i></li>
+                <li onClick={displaySearch} class="d-lg-inline-block ms-lg-3 d-xs-none d-sm-none d-md-none ">    <i style={{ fontSize: "16px" }} class="fa-solid fa-magnifying-glass d-lg-block d-xs-none d-sm-none d-md-none "></i></li>
+                
                 <li class="d-lg-inline-block ms-lg-3">
                     <Link class="text-decoration-none">profil</Link>
                 </li>
