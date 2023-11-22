@@ -9,7 +9,7 @@ export const dataMemeber = [
         
     },
     {
-        id: 1,
+        id: 2,
         name : "Fatima zohra Seghier",
         position : "Co-Lead",
         img : "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/avatars/fatima_zohra_seghier.jpg"
@@ -17,7 +17,7 @@ export const dataMemeber = [
         
     },
     {
-        id: 1,
+        id: 3,
         name : "Chaki Ridouane Allah Mohammed",
         position : "Events and Logistics Lead USTO MB",
         img : "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/avatars/chaki_ridouane_allah_mohammed_0S4J2M7.jpeg"

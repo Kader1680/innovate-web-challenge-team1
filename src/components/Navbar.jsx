@@ -13,34 +13,59 @@ function Navbar() {
     setsearch(false)
   }
 
+  const [navbars, setnavbars] = useState(false);
+  const [hall, sethall] = useState("false");
+  const NabBars = () => {
+    setnavbars(true)
+  }
+
   return (
     <div class="navbar d-lg-flex border-bottom align-items-center justify-content-between position-relative">
+        <i onClick={NabBars} style={{ fontSize: "16px" }} class="fa-solid fa-bars d-lg-none "></i>
         <div>
-        <img src={logo} />
+            <img src={logo} />
+           
         </div>
-        <div class="me-lg-3">
+        <i onClick={displaySearch} style={{ fontSize: "16px" }} class="d-lg-none ms-3 fa-solid fa-magnifying-glass"></i>
+
+        <div class={`me-lg-3 ${navbars ? "list": "items"}`} >
+            <i onClick={() =>{setnavbars(false)}} style={{ fontSize: "16px" }} class="fa-solid fa-x d-lg-none float-end"></i>
             <ul class=" list-unstyled mt-lg-2">
-                <li class="d-inline-block">
+                <li class="d-lg-inline-block ">
                     <Link class="text-decoration-none">About GDSC</Link>
                 </li>
-                <li class="d-inline-block ms-3">
+                <li class="d-lg-inline-block ms-lg-3">
                     <Link class="text-decoration-none">Chapters</Link>
                 </li>
-                <li class="d-inline-block ms-3">
+                <li class="d-lg-inline-block ms-lg-3">
                     <Link class="text-decoration-none">Upcoming events</Link>
                 </li>
-                <li onClick={displaySearch} class="d-inline-block ms-3">    <i style={{ fontSize: "16px" }} class="fa-solid fa-magnifying-glass"></i></li>
-                <li class="d-inline-block ms-3">
+                <div class=" border-bottom border-1 d-lg-none"></div>
+                <li onClick={displaySearch} class="d-lg-inline-block ms-lg-3 ">    <i style={{ fontSize: "16px" }} class="fa-solid fa-magnifying-glass d-sm-none d-md-none"></i></li>
+                <li class="d-lg-inline-block ms-lg-3">
                     <Link class="text-decoration-none">profil</Link>
                 </li>
-                
+                <li class="d-lg-none ms-lg-3">
+                    <Link class="text-decoration-none">My Striket</Link>
+                </li>
+                <div class=" border-bottom border-1 d-lg-none"></div>
+                <li class="d-lg-none ms-lg-3">
+                    <Link class="text-decoration-none">Settings & privacy</Link>
+                </li>
+                <li class="d-lg-none ms-lg-3">
+                    <Link class="text-decoration-none">Log out</Link>
+                </li>
             </ul>
         </div>
 
-        <div style={{ marginTop: "3.8rem", color: "#62666d", border: "1px solid" }} class={`searchBox position-absolute bg-white  border-1 w-100 p-3 ${search ? "d-block" : "d-none"} `}>
+        <div style={{ zIndex:"5", marginTop: "3.8rem", color: "#62666d", padding:"15px 0px 15px 0px" }} class={`searchBox position-absolute bg-white  border-1 w-100 p-3  ${search ? "d-block" : "d-none"} `}>
             <i style={{ fontSize: "16px" }} class="fa-solid fa-magnifying-glass"></i>
             <input placeholder='Search Here...' class= "ms-2 border-0 outline-none ps-1 bg-transparent"/>
             <i onClick={siddenSearch} style={{ fontSize: "16px" }} class="mt-1 fa-solid fa-x float-end"></i>
+        </div>
+
+        <div class="SeacrhHoll">
+            ghgf
         </div>
     </div>
   )

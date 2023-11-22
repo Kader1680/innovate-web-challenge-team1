@@ -5,9 +5,13 @@
 }
 :root{
   --text-color : #62666d;
+  --main-color : #6e7c8f;
+
 }
-.navbar{
+body{
+  color: var(--main-color);
 }
+
 .App{
   width: 90%;
   margin: auto;
@@ -26,4 +30,57 @@ input{
 .footer img{
   width: 15rem;
 
+}
+/* @media(max-width:767px){
+  .list{
+      display: block;
+      width: 80%;
+      background-color: white;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+
+  }
+} */
+@media(max-width:991px){
+  .navbar img{
+    width: 15rem;
+    
+  }
+  .list{
+      display: block;
+      width: 80%;
+      background-color: white;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 2rem 2rem;
+  }
+  .list ul li{
+      margin: 2rem 0rem;
+  }
+  .list ul hr{
+    display: block;
+}
+  .items{
+    display: none;
+  }
+}
+.SeacrhHoll{
+  position: fixed;
+  background-color: #3a3a3a7d;
+  width: 100%;
+  left: 0;
+  top: 32px;
+  height: 100vh;
+  display: none;
+}
+.footer div ul li::before{
+  content: U+00355;
+}
+
+.squre{
+  /* background-color: red; */
 }
